@@ -1,6 +1,7 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.coral2, function (sprite, location) {
     game.over(true, effects.confetti)
 })
+game.showLongText("Find flowers in the map before Time runs out", DialogLayout.Bottom)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 

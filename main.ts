@@ -151,7 +151,9 @@ info.startCountdown(15)
 game.onUpdate(function () {
     if (mySprite.tileKindAt(TileDirection.Center, sprites.dungeon.collectibleBlueCrystal)) {
         slow_down = 45
+        controller.moveSprite(mySprite, slow_down, slow_down)
     } else {
         slow_down = 100
+        controller.moveSprite(mySprite, slow_down, slow_down)
     }
 })

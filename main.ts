@@ -1,4 +1,4 @@
-scene.onOverlapTile(SpriteKind.Player, myTiles.transparency16, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
 	
 })
 let mySprite = sprites.create(img`
@@ -20,24 +20,7 @@ let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
-tiles.setTilemap(tiles.createTilemap(hex`1000100003030303030303030303030303030303030101010101010101010101010303030301010103030303030303030303010103010101030301010101010101010103030303010303010303030303030303030303030103030103030101030303010301010101030301010101010303030103020303030303030303030103010101030203030303030301010301030301010301010101010303010103010303010303030303030101030303030103030103030303030303010103030303030301030301010103030301030303030101010303030301010101010101010101030303030303030303030303030303030301010101010101010101010101010103010101`, img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, [myTiles.transparency16,sprites.dungeon.hazardLava1,sprites.dungeon.chestClosed,sprites.dungeon.collectibleInsignia], TileScale.Sixteen))
+tiles.setTilemap(tilemap`level1`)
 scene.cameraFollowSprite(mySprite)
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff

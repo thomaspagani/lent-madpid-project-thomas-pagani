@@ -1,4 +1,9 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="y^*hP:f^c*@dlCV27,Fv">mySprite</variable><variable type="KIND_SpriteKind" id="$u7jCJ@PP5F_Ee]0k6]h">Player</variable><variable type="KIND_SpriteKind" id="Lo)99|HkMz#xw}vC;@^9">Projectile</variable><variable type="KIND_SpriteKind" id="UPS0yX6u}AKtO%a*j_;q">Food</variable><variable type="KIND_SpriteKind" id="4[N1oAEs$1?J0{j*w8A,">Enemy</variable></variables><block type="scenescreenheight" id="Tprd2=C9g%hpk1n`*mR:" disabled="true" x="780" y="-200"/><block type="pxt-on-start" id="z)aDNP4zI!.oPGi?k_4;" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="aU_vPX1uf6`Lp87{{]]Y"><field name="VAR" id="y^*hP:f^c*@dlCV27,Fv">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="x:QqTT,y:q.[WYYzi]w7"><value name="img"><shadow type="screen_image_picker" id="mRYpF~!0BN)+Hry`waXX"><field name="img">img`
+// Auto-generated code. Do not edit.
+namespace myImages {
+
+    helpers._registerFactory("image", function(name: string) {
+        switch(helpers.stringTrim(name)) {
+            case "image1":return img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . 8 8 8 8 8 8 8 8 . . . . 
@@ -15,7 +20,8 @@
 . . . . . 8 8 8 8 8 8 . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="RvSAqF_+J]|qaj9SwegO"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="wGQk-#6~Kw4=`KOF4#*#"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="6e+u9PIMLrUv}o:uYBe?"><field name="VAR" id="y^*hP:f^c*@dlCV27,Fv">mySprite</field></block></value><next><block type="tilemap_editor" id="5dxQ!NwAFl|WqGJKBRRi"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="camerafollow" id="blX}!W[49hlF16i@eA:1"><value name="sprite"><block type="variables_get" id="meb8%]K7:RkhllIvcs48"><field name="VAR" id="y^*hP:f^c*@dlCV27,Fv">mySprite</field></block></value><next><block type="gamesetbackgroundimage" id="~ALuQb{|)10:^%Vb6k{v"><value name="img"><shadow type="background_image_picker" id="d)5Kf!k^ebppa3L-?,PE"><field name="img">img`
+`;
+            case "image2":return img`
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -136,4 +142,17 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image2"}}</data></shadow></value><next><block type="mapplaceonrandomtile" id="QZAAmg4uv`hBlBs$gPfw"><value name="sprite"><block type="variables_get" id=";X0wsYDNdMP*S~+L/w@E"><field name="VAR" id="y^*hP:f^c*@dlCV27,Fv">mySprite</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="p}gsqCz^PtMALHiwSW)7"><field name="tile">sprites.dungeon.chestClosed</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="scenescreenwidth" id="vIZROsc`#/:|}h^[6%mw" disabled="true" x="780" y="60"/><block type="spriteshittile" id="-`V)=G:AJi`;23hDQ$D." x="660" y="140"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="4c;)):A0QVA6Vbm=`#HF"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="F;`j)a{Or+({eOoXQ({a"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="hIAeK^HbZKW5T:2Zb!OU"><field name="tile">assets.tile`transparency16`</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="C`.@2vkmEU3gt`YSZ3j^"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value></block></xml>
+`;
+        }
+        return null;
+    })
+
+    helpers._registerFactory("animation", function(name: string) {
+        switch(helpers.stringTrim(name)) {
+
+        }
+        return null;
+    })
+
+}
+// Auto-generated code. Do not edit.

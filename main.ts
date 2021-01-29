@@ -1,3 +1,6 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.coral2, function (sprite, location) {
+    game.over(true, effects.confetti)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
 	
 })
@@ -145,3 +148,4 @@ scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     `)
 tiles.placeOnRandomTile(mySprite, sprites.dungeon.chestClosed)
+info.startCountdown(15)

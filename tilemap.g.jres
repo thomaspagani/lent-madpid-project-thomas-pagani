@@ -4,6 +4,12 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIiIiIiIiACAVSKIiCiCAFBVJSIiIoIAUFVVVVVVhQBQVURERESEAFBVRERERIQAUFVVVVVVhQBQVSUiIiKCAIBVIoiIKIIAgIiIiIiIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tile"
+    },
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
@@ -25,7 +31,7 @@
             "sprites.dungeon.collectibleInsignia",
             "sprites.builtin.coral2",
             "sprites.dungeon.collectibleBlueCrystal",
-            "sprites.castle.tileGrass2"
+            "myTiles.tile1"
         ],
         "displayName": "level1"
     },

@@ -147,13 +147,20 @@ scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     `)
 tiles.placeOnRandomTile(mySprite, sprites.dungeon.chestClosed)
-info.startCountdown(15)
+info.startCountdown(12)
 game.onUpdate(function () {
     if (mySprite.tileKindAt(TileDirection.Center, sprites.dungeon.collectibleBlueCrystal)) {
-        slow_down = 45
+        slow_down = 20
         controller.moveSprite(mySprite, slow_down, slow_down)
     } else {
         slow_down = 100
         controller.moveSprite(mySprite, slow_down, slow_down)
+    }
+})
+game.onUpdate(function () {
+    if (mySprite.tileKindAt(TileDirection.Center, sprites.castle.tileGrass2)) {
+    	
+    } else {
+    	
     }
 })

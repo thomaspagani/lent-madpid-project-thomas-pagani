@@ -4,7 +4,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`tile`, function (sprite, loca
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.coral2, function (sprite, location) {
     game.over(false, effects.splatter)
 })
-game.showLongText("Find flowers in the map before Time runs out", DialogLayout.Bottom)
+game.showLongText("beware flowers aren't always the way, potentially popcorn??", DialogLayout.Bottom)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -150,7 +150,7 @@ scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     `)
 tiles.placeOnRandomTile(mySprite, sprites.dungeon.chestClosed)
-info.startCountdown(12)
+info.startCountdown(24)
 game.onUpdate(function () {
     if (mySprite.tileKindAt(TileDirection.Center, sprites.dungeon.collectibleBlueCrystal)) {
         slow_down = 20
